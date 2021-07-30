@@ -12,6 +12,7 @@ function keisan_suru() {
     } else if (enzanshi === '*') {
         kotae = seisu1 * seisu2;
     } else {
+        // セレクトボックスは４パターンしかないため、上記以外は「割り算」と判定する。
         kotae = seisu1 / seisu2;
     }
     // 答えを表示する。
