@@ -1,0 +1,37 @@
+div.keisan-box-futuu {
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 400px;
+    width: 600px;
+    background-color: aliceblue;
+}
+
+div.keisan-box-bakuhatsu {
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 400px;
+    width: 600px;
+    background-image: url(../img/bakuhatsu.jpg);
+    background-size: contain;
+}
+
+div.inner-keisan-box {
+    padding-top: 60px;
+    text-align: center;
+}
+
+div.kotae-box {
+    margin-top: 50px;
+}
+
+#kotae {
+    font-size: 96px;
+}
+
+span.kotae-futuu {
+    color: black;
+}
+
+span.kotae-bakuhatsu {
+    color: white;
+}
