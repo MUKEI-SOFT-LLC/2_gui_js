@@ -7,8 +7,13 @@ function keisan_suru() {
     let kotae;
     if (enzanshi === '+') {
         kotae = seisu1 + seisu2;
-    } // TODO 1. ここに他の計算プログラムを追加する。
-
+    } else if (enzanshi === '-') {
+        kotae = seisu1 - seisu2;
+    } else if (enzanshi === '*') {
+        kotae = seisu1 * seisu2;
+    } else {
+        kotae = seisu1 / seisu2;
+    }
     // 答えを表示する。
     document.getElementById('kotae').innerText = kotae;
 
