@@ -18,7 +18,7 @@ function keisan_suru() {
     // 答えを表示する。
     document.getElementById('kotae').innerText = kotae;
     
-    if (kotae != 0 && (kotae % 3) === 0) {
+    if (kotae !== 0 && (kotae % 3) === 0) {
         // 答えが０以外でかつ、３の倍数であれば爆発させる。
         bakuhatsu();
     } else {
