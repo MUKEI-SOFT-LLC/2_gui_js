@@ -17,8 +17,14 @@ function keisan_suru() {
     }
     // 答えを表示する。
     document.getElementById('kotae').innerText = kotae;
-
-    // TODO 2. kotaeが３の倍数の場合、計算機を爆発させる。それ以外だったら計算機を普通に戻すためにリセットする。
+    
+    if (kotae != 0 && (kotae % 3) === 0) {
+        // 答えが０以外でかつ、３の倍数であれば爆発させる。
+        bakuhatsu();
+    } else {
+        // それ以外ならリセットする。
+        reset();
+    }
 }
 
 // 計算機を爆発させる。
