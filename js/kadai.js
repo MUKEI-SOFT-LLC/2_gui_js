@@ -1,8 +1,20 @@
 // 計算する。
 function keisan_suru() {
-    // TODO 3. 数値が入力されていなかったら、alertを表示して処理を終了する。
-    const seisu1 = parseInt(document.getElementById('seisu_1').value);
-    const seisu2 = parseInt(document.getElementById('seisu_2').value);
+
+    const nyuryoku1 = document.getElementById('seisu_1').value;
+    if (nyuryoku1 === '') {
+        alert('整数１が入力されていません');
+        return;
+    }
+
+    const nyuryoku2 = document.getElementById('seisu_2').value;
+    if (nyuryoku2 === '') {
+        alert('整数２が入力されていません');
+        return;
+    }
+
+    const seisu1 = parseInt(nyuryoku1);
+    const seisu2 = parseInt(nyuryoku2);
     const enzanshi = document.getElementById('enzanshi').value;
     let kotae;
     if (enzanshi === '+') {
